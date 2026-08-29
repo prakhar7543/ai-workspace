@@ -1,15 +1,13 @@
-import { useState } from 'react'
-
-import './App.css'
+// import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./router/routes";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-   <div>
-    <p>hello this is ai-workspace!</p>
-   </div>
-  )
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
