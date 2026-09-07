@@ -3,12 +3,12 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav>
-      <div>
-        <h2>AI Workspace</h2>
-      </div>
+      <div className="h-16 border-b">
+        <div className="flex h-full items-center justify-between px-6">
+        <h2 className="text-xl font-semibold">AI Workspace</h2>
+        <span>User</span>
 
-      <div>
-
+        </div>
       </div>
     </nav>
   );

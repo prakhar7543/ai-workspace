@@ -1,18 +1,20 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { PATHS } from "../../router/paths";
 
 export default function Sidebar() {
   return (
-    <>
-      <aside>
-        <h2>Sidebar</h2>
-      </aside>
+    <aside className="w-64">
+      <h2>Sidebar</h2>
 
       <nav>
-        <Link to={PATHS.dashboard}>Dashboard</Link>
-        <Link to={PATHS.chat}>Chat</Link>
+        <Link className="block" to={PATHS.dashboard}>
+          Dashboard
+        </Link>
+
+        <Link className="block" to={PATHS.chat}>
+          Chat
+        </Link>
       </nav>
-    </>
+    </aside>
   );
 }
