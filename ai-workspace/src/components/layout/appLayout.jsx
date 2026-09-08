@@ -10,7 +10,7 @@ export default function AppLayout() {
 
       <div className="flex flex-1">
         <Sidebar />
-        <main className="flex-1">
+        <main className="flex-1 p-10">
           <Outlet />
         </main>
       </div>

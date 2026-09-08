@@ -7,11 +7,11 @@ export default function Sidebar() {
       <h2 className="mb-4 font-semibold">Sidebar</h2>
 
       <nav className="space-y-2">
-        <NavLink className= {({isActive}) => isActive ? "block rounded px-2 py-3 font-semibold" : "block rounded px-2 py-3"}  to={PATHS.dashboard}>
+        <NavLink className= {({isActive}) => isActive ? "block rounded px-2 py-3 font-semibold bg-gray-100" : "block rounded px-2 py-3 hover:bg-gray-100"}  to={PATHS.dashboard}>
           Dashboard
         </NavLink>
 
-        <NavLink className={({isActive}) => isActive ? "block rounded px-2 py-3 font-semibold" : "block rounded px-2 py-3"} to={PATHS.chat}>
+        <NavLink className={({isActive}) => isActive ? "block rounded px-2 py-3 font-semibold bg-gray-100" : "block rounded px-2 py-3 hover:bg-gray-100"} to={PATHS.chat}>
           Chat
         </NavLink>
       </nav>
